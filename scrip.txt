@@ -1,0 +1,29 @@
+Tôi muốn bạn dựa vào file excel đó viết lại chương trình copy hình và di chuyển sang 1 folder khác với nội dung như sau:
+
+Nguồn hình tôi cần lấy là từ folder "Data", trong folder Data này có rất nhiều các folder khác , với các tên là "06" "07" "08"  "09"  "11" "12" "17" chính là cột LineName trong excel , và trong mỗi folder LineName này điều có rất nhiều folder khác và đều có hình tôi cần lấy, các folder này ở cột MixName, 
+khi đi vào trong mỗi folder  MixName thì có hai folder là "A" và "B", và trong mỗi folder "A" và "B" chính là các folder cột TrackName, sẽ có folder tên là "SaddleSurface". bên trong folder "SaddleSurface" chính là những gì tôi muốn copy và di chuyển nó sang 1 folder mới, trong folder mới đó mình sẽ tạo ra các folder con, chính là những folder "ElementType".
+
+Và khi copy chuyển sang folder mới, tôi muốn các hình được copy đó phải vô đúng từng folder ở cột ElementType, dựa vào file excel các folder MixName sẽ tương ứng với các Folder ElementType ở thư mục mới.
+
+
+Với một số tiêu chí như sau: 
+tôi muốn duyệt hình ở từng folder "LineName", xong "LineName" này tới "LineName" khác
+tôi muốn mỗi folder "LineName" cho copy tối đa 2000 tấm ảnh, copy đủ 2000 tấm hình, sẽ chuyển sang folder "LineName" khác.
+Khi đủ tất cả "LineName" thì ngưng copy
+
+Khi tạo file excel copy_log (nếu chưa tồn tại), và mở nó, tôi muốn copy từ dataframe của file này thành một dataframe mới nhằm mục đích dành riêng dataframe mới này để so sánh, có đầy đủ các cột như dataframe từ copy_log
+trong quá trình copy, nếu "MixName" (mix_name = row['MixName']) tồn tại trong "MixName" của datafream mới thì bỏ qua, thực hiện cái khác. 
+
+Tôi muốn bạn duyệt qua trước dataframe mới này để gán tất cả các "MixName" vào một list exists = [ ], chỉ những "MixName" có "LineName" đang được duyệt
+
+
+Tôi muốn trước khi bắt đầu copy sẽ thực hiện một số thứ sau:
+Tạo ra một file excel log để record lại những folder "LineName" đã copy và những "MixName" của folder "LineName" đó đã được copy, "ElementType" tương ứng. nếu có rồi thì bỏ qua việc tạo, tiến hành mở file để ghi lại.
+
+Tong file excel đó sẽ có các cột: 
+"LineName","MixName","ElementType"
+
+Tôi muốn nó ghi liên tục sau mỗi lần copy thành công.
+
+
+sau khi kết thúc copy, sẽ lưu lại file excel đó.
