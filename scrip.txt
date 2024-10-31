@@ -1,3 +1,34 @@
+I would like you to write a program to copy images and move them to another folder based on the Excel file with the following content:
+
+The source images I need to retrieve are from the "Data" folder. Inside this "Data" folder, there are many other folders with names "06", "07", "08", "09", "11", "12", "17", which correspond to the LineName column in the Excel file. Within each LineName folder, there are many other folders named by values in the MixName column, each containing the images I need.
+
+Inside each MixName folder, there are two subfolders named "A" and "B". Within each "A" and "B" folder, there are folders named by TrackName values, and there is a folder named "SaddleSurface". Inside "SaddleSurface" are the images I want to copy and move to a new folder. In the new folder, I will create subfolders named by values in the ElementType column.
+
+When copying to the new folder, I want the copied images to be organized into the correct folders named by ElementType, based on the correspondence between the MixName folders in the source and the ElementType folders in the destination according to the Excel file.
+
+Here are the conditions:
+
+I want to iterate through each LineName folder and copy images one by one for each LineName, completing one LineName before moving to the next.
+Each LineName folder should have a maximum of 2000 images copied. Once 2000 images have been copied, it should switch to the next LineName folder.
+When all LineName folders are completed, stop copying.
+Before starting to copy, I want the program to perform the following tasks:
+
+Create a copy log Excel file (if it doesn’t exist). Open this file, and I would like to copy it into a new dataframe for the purpose of comparison. This new dataframe should contain all the columns present in the original copy log dataframe.
+While copying, if the MixName (mix_name = row['MixName']) already exists in the "MixName" of the new dataframe, skip it and proceed with the next.
+I want you to iterate over the new dataframe to add all MixName with the current LineName being processed to a list called exists = [].
+
+In addition, I want a separate Excel log file to record the LineName, MixName, and corresponding ElementType of the copied folders:
+
+If the file already exists, skip the creation and proceed to open it for logging.
+This log should have columns: "LineName", "MixName", "ElementType".
+I want the log to record each successful copy and save the log continuously after each copy.
+Finally, I would like to save the log file at the end of the copying process.
+
+Please write the code to copy the images as described. During the copying process, it should save the log and the names of the MixName folders that were copied so that if the program is run again, it will skip these folders. The limit should be set to 2000 images per LineName.
+
+Additionally, if it reaches 1500 copies and they are still the same ElementType, then for the remaining 500 images, copy only those MixNames that have a different ElementType.
+
+
 Tôi muốn bạn dựa vào file excel đó viết lại chương trình copy hình và di chuyển sang 1 folder khác với nội dung như sau:
 
 Nguồn hình tôi cần lấy là từ folder "Data", trong folder Data này có rất nhiều các folder khác , với các tên là "06" "07" "08"  "09"  "11" "12" "17" chính là cột LineName trong excel , và trong mỗi folder LineName này điều có rất nhiều folder khác và đều có hình tôi cần lấy, các folder này ở cột MixName, 
@@ -27,3 +58,8 @@ Tôi muốn nó ghi liên tục sau mỗi lần copy thành công.
 
 
 sau khi kết thúc copy, sẽ lưu lại file excel đó.
+
+Tôi muốn bạn viết cho tôi code để copy hình. Trong quá trình copy hình nó có lưu lại log, tên những folder mixname đã được copy. Để lần sau có chạy lại thì bỏ qua những folder này. Giới hạn là 2000 hình thì ngưng. 
+
+nếu như copy tới 1500 rồi mà vẫn là loại element đó phần còn lại (500 hình) nên copy những MixName có Element Type khác với cái đó
+
