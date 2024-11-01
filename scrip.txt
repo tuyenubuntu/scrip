@@ -1,65 +1,105 @@
-I would like you to write a program to copy images and move them to another folder based on the Excel file with the following content:
+Program Overview
+This program will read an Excel file to get information about image categories and limits, then copy images from source folders to destination folders based on certain criteria. It also keeps track of which folders have already been copied to avoid duplication.
 
-The source images I need to retrieve are from the "Data" folder. Inside this "Data" folder, there are many other folders with names "06", "07", "08", "09", "11", "12", "17", which correspond to the LineName column in the Excel file. Within each LineName folder, there are many other folders named by values in the MixName column, each containing the images I need.
+Program Design Outline
+Data Source & Configuration:
 
-Inside each MixName folder, there are two subfolders named "A" and "B". Within each "A" and "B" folder, there are folders named by TrackName values, and there is a folder named "SaddleSurface". Inside "SaddleSurface" are the images I want to copy and move to a new folder. In the new folder, I will create subfolders named by values in the ElementType column.
+Use an external file (e.g., type_e.xlsx) to define categories for each image (such as ElementType).
+Create a dictionary that maps each image identifier (e.g., MixName) to its category. This is used to organize the copied images.
+Logging Mechanism:
 
-When copying to the new folder, I want the copied images to be organized into the correct folders named by ElementType, based on the correspondence between the MixName folders in the source and the ElementType folders in the destination according to the Excel file.
+Maintain a log file (Copied_MixNames_{line_name}.xlsx) to record already copied image identifiers.
+This log helps prevent re-copying the same images in subsequent program runs.
+Copying Logic:
 
-Here are the conditions:
+Set conditions for copying images:
+Only copy images from folders that meet certain naming criteria (e.g., start with "C" and are exactly 7 characters).
+Track the number of images copied to limit the total number of copied images (e.g., 2000 max).
+Limit the number of images per category (e.g., no more than 1500 per ElementType).
+Handle errors in copying (e.g., if a file is missing) and continue the process without interruptions.
+Main Loop & Execution:
 
-I want to iterate through each LineName folder and copy images one by one for each LineName, completing one LineName before moving to the next.
-Each LineName folder should have a maximum of 2000 images copied. Once 2000 images have been copied, it should switch to the next LineName folder.
-When all LineName folders are completed, stop copying.
-Before starting to copy, I want the program to perform the following tasks:
+Define a main loop that iterates over each line name in a list of LineNames.
+For each line, load the list of image folders, check if they meet the naming criteria, and copy images that haven't already been logged.
+Step-by-Step Logic
+Initialize the Program:
 
-Create a copy log Excel file (if it doesn’t exist). Open this file, and I would like to copy it into a new dataframe for the purpose of comparison. This new dataframe should contain all the columns present in the original copy log dataframe.
-While copying, if the MixName (mix_name = row['MixName']) already exists in the "MixName" of the new dataframe, skip it and proceed with the next.
-I want you to iterate over the new dataframe to add all MixName with the current LineName being processed to a list called exists = [].
+Import necessary libraries for file operations and data handling.
+Load configuration data from an external Excel file to a dictionary.
+Define Functions:
 
-In addition, I want a separate Excel log file to record the LineName, MixName, and corresponding ElementType of the copied folders:
+Load Config Data: Load categories (ElementType) from the Excel file into a dictionary for easy look-up.
+Load Copied Log: Check if the log file exists for a given line name and load the previously copied items to avoid duplication.
+Copy Files: For each image folder that meets the criteria, copy files to the destination folder if they haven’t already been copied and haven’t reached the copy limit.
+Update Log: After copying, update the log file with newly copied images.
+Run the Program:
 
-If the file already exists, skip the creation and proceed to open it for logging.
-This log should have columns: "LineName", "MixName", "ElementType".
-I want the log to record each successful copy and save the log continuously after each copy.
-Finally, I would like to save the log file at the end of the copying process.
-
-Please write the code to copy the images as described. During the copying process, it should save the log and the names of the MixName folders that were copied so that if the program is run again, it will skip these folders. The limit should be set to 2000 images per LineName.
-
-Additionally, if it reaches 1500 copies and they are still the same ElementType, then for the remaining 500 images, copy only those MixNames that have a different ElementType.
-
-
-Tôi muốn bạn dựa vào file excel đó viết lại chương trình copy hình và di chuyển sang 1 folder khác với nội dung như sau:
-
-Nguồn hình tôi cần lấy là từ folder "Data", trong folder Data này có rất nhiều các folder khác , với các tên là "06" "07" "08"  "09"  "11" "12" "17" chính là cột LineName trong excel , và trong mỗi folder LineName này điều có rất nhiều folder khác và đều có hình tôi cần lấy, các folder này ở cột MixName, 
-khi đi vào trong mỗi folder  MixName thì có hai folder là "A" và "B", và trong mỗi folder "A" và "B" chính là các folder cột TrackName, sẽ có folder tên là "SaddleSurface". bên trong folder "SaddleSurface" chính là những gì tôi muốn copy và di chuyển nó sang 1 folder mới, trong folder mới đó mình sẽ tạo ra các folder con, chính là những folder "ElementType".
-
-Và khi copy chuyển sang folder mới, tôi muốn các hình được copy đó phải vô đúng từng folder ở cột ElementType, dựa vào file excel các folder MixName sẽ tương ứng với các Folder ElementType ở thư mục mới.
-
-
-Với một số tiêu chí như sau: 
-tôi muốn duyệt hình ở từng folder "LineName", xong "LineName" này tới "LineName" khác
-tôi muốn mỗi folder "LineName" cho copy tối đa 2000 tấm ảnh, copy đủ 2000 tấm hình, sẽ chuyển sang folder "LineName" khác.
-Khi đủ tất cả "LineName" thì ngưng copy
-
-Khi tạo file excel copy_log (nếu chưa tồn tại), và mở nó, tôi muốn copy từ dataframe của file này thành một dataframe mới nhằm mục đích dành riêng dataframe mới này để so sánh, có đầy đủ các cột như dataframe từ copy_log
-trong quá trình copy, nếu "MixName" (mix_name = row['MixName']) tồn tại trong "MixName" của datafream mới thì bỏ qua, thực hiện cái khác. 
-
-Tôi muốn bạn duyệt qua trước dataframe mới này để gán tất cả các "MixName" vào một list exists = [ ], chỉ những "MixName" có "LineName" đang được duyệt
+Use a main loop to apply the function to each line name in the list, copying images according to the defined criteria.
 
 
-Tôi muốn trước khi bắt đầu copy sẽ thực hiện một số thứ sau:
-Tạo ra một file excel log để record lại những folder "LineName" đã copy và những "MixName" của folder "LineName" đó đã được copy, "ElementType" tương ứng. nếu có rồi thì bỏ qua việc tạo, tiến hành mở file để ghi lại.
 
-Tong file excel đó sẽ có các cột: 
-"LineName","MixName","ElementType"
+Logic:
 
-Tôi muốn nó ghi liên tục sau mỗi lần copy thành công.
+# Load configuration data from Excel (type_e.xlsx)
+LOAD excel file as data_frame
+CREATE dictionary: element_dict with MixName as key, ElementType as value
+
+# Define main function to copy images
+FUNCTION copy_images(src_root, dest_root, line_name):
+    SET log_path = "Copied_MixNames_{line_name}.xlsx"
+    IF log file exists:
+        LOAD log file into copied_list as a set
+    ELSE:
+        INITIALIZE copied_list as an empty set
+
+    INITIALIZE total_files_copied = 0
+    INITIALIZE element_type_count = {}
+
+    FILTER folders in src_root where folder name starts with "C" and length is 7
+
+    FOR each mix_name in filtered folders:
+        IF mix_name in copied_list:
+            SKIP this mix_name
+
+        element_type = element_dict[mix_name]
+        IF element_type is None:
+            SKIP this mix_name
+
+        IF element_type_count[element_type] >= 1500:
+            SKIP this element_type
+
+        SET src_folders to paths for "A" and "B" tracks for this mix_name
+        SET dest_folder = destination folder path based on element_type
+        CREATE dest_folder if it does not exist
+
+        FOR each src_folder in src_folders:
+            IF src_folder does not exist:
+                CONTINUE
+
+            FOR each image file in src_folder:
+                TRY to copy image to dest_folder
+                IF copy successful:
+                    INCREMENT total_files_copied
+                    INCREMENT element_type_count[element_type]
+                IF total_files_copied >= 2000 OR element_type_count[element_type] >= 1500:
+                    BREAK loops as needed
+
+            IF total_files_copied >= 2000:
+                BREAK
+
+    UPDATE log file with newly copied mix_names
+    PRINT success message for each line
+
+# Execute main function for each line name in line_name_list
+FOR each line_name in line_name_list:
+    CALL copy_images with src_root, dest_root, line_name
 
 
-sau khi kết thúc copy, sẽ lưu lại file excel đó.
 
-Tôi muốn bạn viết cho tôi code để copy hình. Trong quá trình copy hình nó có lưu lại log, tên những folder mixname đã được copy. Để lần sau có chạy lại thì bỏ qua những folder này. Giới hạn là 2000 hình thì ngưng. 
+TIP:
 
-nếu như copy tới 1500 rồi mà vẫn là loại element đó phần còn lại (500 hình) nên copy những MixName có Element Type khác với cái đó
-
+Source and Destination Paths: Allow custom input for src_root and dest_root.
+Copy Limits: Set adjustable limits for total_files_copied and per-category (element_type_count).
+Log Management: Choose whether to keep or clear the log file after each run.
+Folder Criteria: Define specific rules for valid folders (e.g., naming conventions).
+Error Handling Options: Specify how errors should be managed (e.g., skip or halt).

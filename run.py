@@ -84,8 +84,8 @@ def copy_images(src_root, dest_root, line_name):
         combined_log.to_excel(log_path, index=False)
         print(f"Updated the log with copied MixNames in '{log_path}'.")
 
-src_root = "Z"
-dest_root = "data"
+src_root = "Z:"
+dest_root = "C:\\Users\\rbu1hc\\OneDrive - Bosch Group\\draw_test"
 line_Names = ['11', '12'] 
 for line_name in line_Names:
     copy_images(src_root, dest_root, line_name) 

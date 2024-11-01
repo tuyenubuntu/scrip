@@ -56,14 +56,18 @@ def copy_images(src_root, dest_root, line_name):
                     src_path = os.path.join(src_folder, filename)
                     dest_path = os.path.join(dest_folder, filename)
 
-                    # Copy the image if necessary
-                    shutil.copy(src_path, dest_path)
-                    print(f"Copied: {filename} to {dest_folder}")
+                    # Attempt to copy the image, skip if an error occurs
+                    try:
+                        shutil.copy(src_path, dest_path)
+                        print(f"Copied: {filename} to {dest_folder}")
+                        files_copied += 1
+                        total_files_copied += 1
+                        element_type_count[element_type] = element_type_count.get(element_type, 0) + 1
+                    except Exception as e:
+                        print(f"Error copying {src_path} to {dest_path}: {e}")
+                        continue  # Skip this file if an error occurs
 
-                    files_copied += 1
-                    total_files_copied += 1
-                    element_type_count[element_type] = element_type_count.get(element_type, 0) + 1
-
+                    # Check copy limit
                     if total_files_copied >= 2000:
                         print("Copied 2000 images in total. Stopping.")
                         break  # Stop if the 2000-file limit is reached
@@ -93,8 +97,8 @@ def copy_images(src_root, dest_root, line_name):
         combined_log.to_excel(log_path, index=False)
         print(f"Updated the log with copied MixNames in '{log_path}'.")
 
-src_root = "Z"
-dest_root = "data"
-line_Names = ['11', '12'] 
+src_root = "Z:"
+dest_root = "C:\\Users\\rbu1hc\\OneDrive - Bosch Group\\Draw"
+line_Names = ['11', '12', '06','07','08','09','17'] 
 for line_name in line_Names:
     copy_images(src_root, dest_root, line_name)
