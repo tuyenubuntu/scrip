@@ -1,0 +1,26 @@
+<annotation>
+	<folder>Image_raw</folder>
+	<filename>07_24-06_IMG_LOG__CAM_2_20231212_065228_123.jpg</filename>
+	<path>C:\Users\AI_PRO_DESK\OneDrive - boschtga\Partition_Local\AI@AOI\Pre_data\Image_raw\07_24-06_IMG_LOG__CAM_2_20231212_065228_123.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>1296</width>
+		<height>600</height>
+		<depth>1</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>aussenriss</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>867</xmin>
+			<ymin>312</ymin>
+			<xmax>895</xmax>
+			<ymax>359</ymax>
+		</bndbox>
+	</object>
+	</annotation>

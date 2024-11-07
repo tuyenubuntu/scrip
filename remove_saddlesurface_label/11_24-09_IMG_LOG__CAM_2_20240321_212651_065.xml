@@ -1,0 +1,38 @@
+<annotation>
+	<folder>Image_raw</folder>
+	<filename>11_24-09_IMG_LOG__CAM_2_20240321_212651_065.jpg</filename>
+	<path>C:\Users\AI_PRO_DESK\OneDrive - boschtga\Partition_Local\AI@AOI\Pre_data\Image_raw\11_24-09_IMG_LOG__CAM_2_20240321_212651_065.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>1296</width>
+		<height>600</height>
+		<depth>1</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>enriss</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>443</xmin>
+			<ymin>295</ymin>
+			<xmax>482</xmax>
+			<ymax>323</ymax>
+		</bndbox>
+	</object>
+	<object>
+		<name>abriss</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>134</xmin>
+			<ymin>274</ymin>
+			<xmax>182</xmax>
+			<ymax>289</ymax>
+		</bndbox>
+	</object>
+</annotation>

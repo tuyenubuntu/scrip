@@ -1,0 +1,26 @@
+<annotation>
+	<folder>Image_raw</folder>
+	<filename>09_30-12_IMG_LOG__CAM_1_20241103_015701_869.jpg</filename>
+	<path>C:\Users\rbu1hc\OneDrive - Bosch Group\AI Model Development\Data\Train\Image_raw\09_30-12_IMG_LOG__CAM_1_20241103_015701_869.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>1296</width>
+		<height>600</height>
+		<depth>1</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>impression</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>675</xmin>
+			<ymin>257</ymin>
+			<xmax>765</xmax>
+			<ymax>337</ymax>
+		</bndbox>
+	</object>
+	</annotation>
