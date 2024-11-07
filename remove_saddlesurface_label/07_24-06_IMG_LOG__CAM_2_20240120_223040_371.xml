@@ -1,7 +1,7 @@
 <annotation>
 	<folder>Image_raw</folder>
 	<filename>07_24-06_IMG_LOG__CAM_2_20240120_223040_371.jpg</filename>
-	<path>C:\Users\AI_PRO_DESK\OneDrive - mainprodesk\AI@AOI\Pre_data\Image_raw\07_24-06_IMG_LOG__CAM_2_20240120_223040_371.jpg</path>
+	<path>C:\Users\AI_PRO_DESK\OneDrive - boschtga\Partition_Local\AI@AOI\Pre_data\Image_raw\07_24-06_IMG_LOG__CAM_2_20240120_223040_371.jpg</path>
 	<source>
 		<database>Unknown</database>
 	</source>
@@ -12,15 +12,15 @@
 	</size>
 	<segmented>0</segmented>
 	<object>
-		<name>enriss</name>
+		<name>oil</name>
 		<pose>Unspecified</pose>
 		<truncated>0</truncated>
 		<difficult>0</difficult>
 		<bndbox>
-			<xmin>279</xmin>
+			<xmin>277</xmin>
 			<ymin>258</ymin>
-			<xmax>303</xmax>
-			<ymax>281</ymax>
+			<xmax>570</xmax>
+			<ymax>340</ymax>
 		</bndbox>
 	</object>
-	</annotation>
+</annotation>

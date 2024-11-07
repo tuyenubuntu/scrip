@@ -23,4 +23,28 @@
 			<ymax>289</ymax>
 		</bndbox>
 	</object>
-	</annotation>
+	<object>
+		<name>oil</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>116</xmin>
+			<ymin>280</ymin>
+			<xmax>221</xmax>
+			<ymax>329</ymax>
+		</bndbox>
+	</object>
+	<object>
+		<name>oil</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>227</xmin>
+			<ymin>274</ymin>
+			<xmax>290</xmax>
+			<ymax>336</ymax>
+		</bndbox>
+	</object>
+</annotation>

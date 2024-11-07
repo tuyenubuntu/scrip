@@ -1,7 +1,7 @@
 <annotation>
 	<folder>Image_raw</folder>
 	<filename>09_30-12_IMG_LOG__CAM_2_20241103_014822_312.jpg</filename>
-	<path>C:\Users\rbu1hc\OneDrive - Bosch Group\AI Model Development\Data\Train\Image_raw\09_30-12_IMG_LOG__CAM_2_20241103_014822_312.jpg</path>
+	<path>C:\Users\AI_PRO_DESK\OneDrive - mainprodesk\AI@AOI\Pre_data\Image_raw\09_30-12_IMG_LOG__CAM_2_20241103_014822_312.jpg</path>
 	<source>
 		<database>Unknown</database>
 	</source>
@@ -23,4 +23,16 @@
 			<ymax>252</ymax>
 		</bndbox>
 	</object>
-	</annotation>
+	<object>
+		<name>aussenriss</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>1165</xmin>
+			<ymin>194</ymin>
+			<xmax>1198</xmax>
+			<ymax>276</ymax>
+		</bndbox>
+	</object>
+</annotation>

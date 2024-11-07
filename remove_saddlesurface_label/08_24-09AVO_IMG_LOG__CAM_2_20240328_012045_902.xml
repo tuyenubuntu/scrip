@@ -1,7 +1,7 @@
 <annotation>
 	<folder>Image_raw</folder>
 	<filename>08_24-09AVO_IMG_LOG__CAM_2_20240328_012045_902.jpg</filename>
-	<path>C:\Users\rbu1hc\OneDrive - Bosch Group\AI Model Development\Data\Train\Image_raw\08_24-09AVO_IMG_LOG__CAM_2_20240328_012045_902.jpg</path>
+	<path>C:\Users\AI_PRO_DESK\OneDrive - boschtga\Partition_Local\AI@AOI\Pre_data\Image_raw\08_24-09AVO_IMG_LOG__CAM_2_20240328_012045_902.jpg</path>
 	<source>
 		<database>Unknown</database>
 	</source>
@@ -11,4 +11,28 @@
 		<depth>1</depth>
 	</size>
 	<segmented>0</segmented>
-	</annotation>
+	<object>
+		<name>abriss</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>231</xmin>
+			<ymin>422</ymin>
+			<xmax>254</xmax>
+			<ymax>427</ymax>
+		</bndbox>
+	</object>
+	<object>
+		<name>abriss</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>343</xmin>
+			<ymin>427</ymin>
+			<xmax>362</xmax>
+			<ymax>432</ymax>
+		</bndbox>
+	</object>
+</annotation>

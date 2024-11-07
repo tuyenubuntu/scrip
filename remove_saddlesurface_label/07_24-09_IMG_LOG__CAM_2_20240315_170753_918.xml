@@ -1,7 +1,7 @@
 <annotation>
 	<folder>Image_raw</folder>
 	<filename>07_24-09_IMG_LOG__CAM_2_20240315_170753_918.jpg</filename>
-	<path>C:\Users\AI_PRO_DESK\OneDrive - mainprodesk\AI@AOI\Pre_data\Image_raw\07_24-09_IMG_LOG__CAM_2_20240315_170753_918.jpg</path>
+	<path>C:\Users\AI_PRO_DESK\OneDrive - boschtga\Partition_Local\AI@AOI\Pre_data\Image_raw\07_24-09_IMG_LOG__CAM_2_20240315_170753_918.jpg</path>
 	<source>
 		<database>Unknown</database>
 	</source>
@@ -18,9 +18,9 @@
 		<difficult>0</difficult>
 		<bndbox>
 			<xmin>647</xmin>
-			<ymin>358</ymin>
-			<xmax>684</xmax>
+			<ymin>360</ymin>
+			<xmax>678</xmax>
 			<ymax>412</ymax>
 		</bndbox>
 	</object>
-	</annotation>
+</annotation>

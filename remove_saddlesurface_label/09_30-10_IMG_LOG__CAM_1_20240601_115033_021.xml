@@ -1,7 +1,7 @@
 <annotation>
 	<folder>Image_raw</folder>
 	<filename>09_30-10_IMG_LOG__CAM_1_20240601_115033_021.jpg</filename>
-	<path>C:\Users\rbu1hc\OneDrive - Bosch Group\AI Model Development\Data\Train\Image_raw\09_30-10_IMG_LOG__CAM_1_20240601_115033_021.jpg</path>
+	<path>C:\Users\AI_PRO_DESK\OneDrive - mainprodesk\AI@AOI\Pre_data\Image_raw\09_30-10_IMG_LOG__CAM_1_20240601_115033_021.jpg</path>
 	<source>
 		<database>Unknown</database>
 	</source>
@@ -11,4 +11,16 @@
 		<depth>1</depth>
 	</size>
 	<segmented>0</segmented>
-	</annotation>
+	<object>
+		<name>oil</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>940</xmin>
+			<ymin>244</ymin>
+			<xmax>963</xmax>
+			<ymax>274</ymax>
+		</bndbox>
+	</object>
+</annotation>

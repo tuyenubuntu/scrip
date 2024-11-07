@@ -1,7 +1,7 @@
 <annotation>
 	<folder>Image_raw</folder>
 	<filename>06_30-12_IMG_LOG__CAM_2_20240701_082842_292.jpg</filename>
-	<path>C:\Users\rbu1hc\OneDrive - Bosch Group\AI Model Development\Data\Train\Image_raw\06_30-12_IMG_LOG__CAM_2_20240701_082842_292.jpg</path>
+	<path>C:\Users\AI_PRO_DESK\OneDrive - boschtga\Partition_Local\AI@AOI\Pre_data\Image_raw\06_30-12_IMG_LOG__CAM_2_20240701_082842_292.jpg</path>
 	<source>
 		<database>Unknown</database>
 	</source>
@@ -17,10 +17,10 @@
 		<truncated>0</truncated>
 		<difficult>0</difficult>
 		<bndbox>
-			<xmin>570</xmin>
-			<ymin>427</ymin>
-			<xmax>620</xmax>
-			<ymax>480</ymax>
+			<xmin>580</xmin>
+			<ymin>430</ymin>
+			<xmax>615</xmax>
+			<ymax>481</ymax>
 		</bndbox>
 	</object>
-	</annotation>
+</annotation>

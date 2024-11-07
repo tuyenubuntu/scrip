@@ -1,7 +1,7 @@
 <annotation>
 	<folder>Image_raw</folder>
 	<filename>08_24-09AVO_IMG_LOG__CAM_2_20240328_074231_125.jpg</filename>
-	<path>C:\Users\rbu1hc\OneDrive - Bosch Group\AI Model Development\Data\Train\Image_raw\08_24-09AVO_IMG_LOG__CAM_2_20240328_074231_125.jpg</path>
+	<path>C:\Users\AI_PRO_DESK\OneDrive - boschtga\Partition_Local\AI@AOI\Pre_data\Image_raw\08_24-09AVO_IMG_LOG__CAM_2_20240328_074231_125.jpg</path>
 	<source>
 		<database>Unknown</database>
 	</source>
@@ -17,10 +17,10 @@
 		<truncated>0</truncated>
 		<difficult>0</difficult>
 		<bndbox>
-			<xmin>59</xmin>
-			<ymin>390</ymin>
-			<xmax>94</xmax>
-			<ymax>412</ymax>
+			<xmin>12</xmin>
+			<ymin>392</ymin>
+			<xmax>97</xmax>
+			<ymax>408</ymax>
 		</bndbox>
 	</object>
 	<object>
@@ -31,7 +31,7 @@
 		<bndbox>
 			<xmin>276</xmin>
 			<ymin>393</ymin>
-			<xmax>299</xmax>
+			<xmax>304</xmax>
 			<ymax>412</ymax>
 		</bndbox>
 	</object>
@@ -41,10 +41,10 @@
 		<truncated>0</truncated>
 		<difficult>0</difficult>
 		<bndbox>
-			<xmin>314</xmin>
-			<ymin>394</ymin>
-			<xmax>373</xmax>
-			<ymax>421</ymax>
+			<xmin>315</xmin>
+			<ymin>395</ymin>
+			<xmax>377</xmax>
+			<ymax>417</ymax>
 		</bndbox>
 	</object>
 	<object>
@@ -53,10 +53,10 @@
 		<truncated>0</truncated>
 		<difficult>0</difficult>
 		<bndbox>
-			<xmin>179</xmin>
-			<ymin>390</ymin>
-			<xmax>218</xmax>
-			<ymax>403</ymax>
+			<xmin>178</xmin>
+			<ymin>393</ymin>
+			<xmax>217</xmax>
+			<ymax>400</ymax>
 		</bndbox>
 	</object>
 	<object>
@@ -65,10 +65,22 @@
 		<truncated>0</truncated>
 		<difficult>0</difficult>
 		<bndbox>
-			<xmin>542</xmin>
-			<ymin>397</ymin>
-			<xmax>715</xmax>
-			<ymax>411</ymax>
+			<xmin>526</xmin>
+			<ymin>398</ymin>
+			<xmax>711</xmax>
+			<ymax>409</ymax>
+		</bndbox>
+	</object>
+	<object>
+		<name>enriss</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>538</xmin>
+			<ymin>437</ymin>
+			<xmax>548</xmax>
+			<ymax>444</ymax>
 		</bndbox>
 	</object>
 </annotation>

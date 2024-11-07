@@ -1,7 +1,7 @@
 <annotation>
 	<folder>Image_raw</folder>
 	<filename>08_24-09_IMG_LOG__CAM_2_20240601_020423_155.jpg</filename>
-	<path>C:\Users\AI_PRO_DESK\OneDrive - mainprodesk\AI@AOI\Pre_data\Image_raw\08_24-09_IMG_LOG__CAM_2_20240601_020423_155.jpg</path>
+	<path>C:\Users\AI_PRO_DESK\OneDrive - boschtga\Partition_Local\AI@AOI\Pre_data\Image_raw\08_24-09_IMG_LOG__CAM_2_20240601_020423_155.jpg</path>
 	<source>
 		<database>Unknown</database>
 	</source>
@@ -17,10 +17,22 @@
 		<truncated>0</truncated>
 		<difficult>0</difficult>
 		<bndbox>
-			<xmin>377</xmin>
-			<ymin>439</ymin>
-			<xmax>429</xmax>
-			<ymax>479</ymax>
+			<xmin>381</xmin>
+			<ymin>440</ymin>
+			<xmax>425</xmax>
+			<ymax>481</ymax>
 		</bndbox>
 	</object>
-	</annotation>
+	<object>
+		<name>abriss</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>464</xmin>
+			<ymin>401</ymin>
+			<xmax>507</xmax>
+			<ymax>408</ymax>
+		</bndbox>
+	</object>
+</annotation>

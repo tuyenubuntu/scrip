@@ -1,7 +1,7 @@
 <annotation>
 	<folder>Image_raw</folder>
 	<filename>07_24-06_IMG_LOG__CAM_2_20240216_024858_649.jpg</filename>
-	<path>C:\Users\rbu1hc\OneDrive - Bosch Group\AI Model Development\Data\Train\Image_raw\07_24-06_IMG_LOG__CAM_2_20240216_024858_649.jpg</path>
+	<path>C:\Users\AI_PRO_DESK\OneDrive - boschtga\Partition_Local\AI@AOI\Pre_data\Image_raw\07_24-06_IMG_LOG__CAM_2_20240216_024858_649.jpg</path>
 	<source>
 		<database>Unknown</database>
 	</source>
@@ -17,46 +17,22 @@
 		<truncated>0</truncated>
 		<difficult>0</difficult>
 		<bndbox>
-			<xmin>531</xmin>
-			<ymin>264</ymin>
+			<xmin>523</xmin>
+			<ymin>265</ymin>
 			<xmax>605</xmax>
-			<ymax>276</ymax>
+			<ymax>273</ymax>
 		</bndbox>
 	</object>
 	<object>
-		<name>enriss</name>
+		<name>oil</name>
 		<pose>Unspecified</pose>
 		<truncated>0</truncated>
 		<difficult>0</difficult>
 		<bndbox>
-			<xmin>446</xmin>
-			<ymin>268</ymin>
-			<xmax>546</xmax>
-			<ymax>292</ymax>
-		</bndbox>
-	</object>
-	<object>
-		<name>enriss</name>
-		<pose>Unspecified</pose>
-		<truncated>0</truncated>
-		<difficult>0</difficult>
-		<bndbox>
-			<xmin>486</xmin>
-			<ymin>318</ymin>
-			<xmax>529</xmax>
-			<ymax>341</ymax>
-		</bndbox>
-	</object>
-	<object>
-		<name>enriss</name>
-		<pose>Unspecified</pose>
-		<truncated>0</truncated>
-		<difficult>0</difficult>
-		<bndbox>
-			<xmin>537</xmin>
-			<ymin>289</ymin>
-			<xmax>567</xmax>
-			<ymax>333</ymax>
+			<xmin>398</xmin>
+			<ymin>270</ymin>
+			<xmax>561</xmax>
+			<ymax>346</ymax>
 		</bndbox>
 	</object>
 </annotation>

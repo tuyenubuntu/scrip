@@ -18,9 +18,9 @@
 		<difficult>0</difficult>
 		<bndbox>
 			<xmin>866</xmin>
-			<ymin>284</ymin>
+			<ymin>286</ymin>
 			<xmax>885</xmax>
-			<ymax>297</ymax>
+			<ymax>298</ymax>
 		</bndbox>
 	</object>
 	<object>
@@ -32,7 +32,7 @@
 			<xmin>906</xmin>
 			<ymin>293</ymin>
 			<xmax>1004</xmax>
-			<ymax>340</ymax>
+			<ymax>343</ymax>
 		</bndbox>
 	</object>
 	<object>
@@ -45,6 +45,54 @@
 			<ymin>315</ymin>
 			<xmax>1029</xmax>
 			<ymax>361</ymax>
+		</bndbox>
+	</object>
+	<object>
+		<name>oil</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>775</xmin>
+			<ymin>296</ymin>
+			<xmax>800</xmax>
+			<ymax>342</ymax>
+		</bndbox>
+	</object>
+	<object>
+		<name>oil</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>806</xmin>
+			<ymin>305</ymin>
+			<xmax>899</xmax>
+			<ymax>370</ymax>
+		</bndbox>
+	</object>
+	<object>
+		<name>oil</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>1121</xmin>
+			<ymin>285</ymin>
+			<xmax>1190</xmax>
+			<ymax>339</ymax>
+		</bndbox>
+	</object>
+	<object>
+		<name>oil</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>1074</xmin>
+			<ymin>323</ymin>
+			<xmax>1134</xmax>
+			<ymax>358</ymax>
 		</bndbox>
 	</object>
 </annotation>

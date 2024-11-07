@@ -1,7 +1,7 @@
 <annotation>
 	<folder>Image_raw</folder>
 	<filename>07_24-06_IMG_LOG__CAM_2_20240121_130601_906.jpg</filename>
-	<path>C:\Users\rbu1hc\OneDrive - Bosch Group\AI Model Development\Data\Train\Image_raw\07_24-06_IMG_LOG__CAM_2_20240121_130601_906.jpg</path>
+	<path>C:\Users\AI_PRO_DESK\OneDrive - boschtga\Partition_Local\AI@AOI\Pre_data\Image_raw\07_24-06_IMG_LOG__CAM_2_20240121_130601_906.jpg</path>
 	<source>
 		<database>Unknown</database>
 	</source>
@@ -17,10 +17,10 @@
 		<truncated>0</truncated>
 		<difficult>0</difficult>
 		<bndbox>
-			<xmin>118</xmin>
+			<xmin>122</xmin>
 			<ymin>246</ymin>
 			<xmax>167</xmax>
-			<ymax>257</ymax>
+			<ymax>256</ymax>
 		</bndbox>
 	</object>
 	<object>
@@ -29,10 +29,10 @@
 		<truncated>0</truncated>
 		<difficult>0</difficult>
 		<bndbox>
-			<xmin>300</xmin>
-			<ymin>253</ymin>
+			<xmin>297</xmin>
+			<ymin>254</ymin>
 			<xmax>345</xmax>
-			<ymax>265</ymax>
+			<ymax>264</ymax>
 		</bndbox>
 	</object>
 	<object>
@@ -42,33 +42,69 @@
 		<difficult>0</difficult>
 		<bndbox>
 			<xmin>219</xmin>
-			<ymin>249</ymin>
-			<xmax>240</xmax>
-			<ymax>265</ymax>
+			<ymin>251</ymin>
+			<xmax>239</xmax>
+			<ymax>262</ymax>
 		</bndbox>
 	</object>
 	<object>
-		<name>enriss</name>
+		<name>oil</name>
 		<pose>Unspecified</pose>
 		<truncated>0</truncated>
 		<difficult>0</difficult>
 		<bndbox>
-			<xmin>524</xmin>
-			<ymin>278</ymin>
+			<xmin>400</xmin>
+			<ymin>265</ymin>
 			<xmax>552</xmax>
-			<ymax>301</ymax>
+			<ymax>302</ymax>
 		</bndbox>
 	</object>
 	<object>
-		<name>abriss</name>
+		<name>oil</name>
 		<pose>Unspecified</pose>
 		<truncated>0</truncated>
 		<difficult>0</difficult>
 		<bndbox>
 			<xmin>373</xmin>
 			<ymin>272</ymin>
-			<xmax>391</xmax>
-			<ymax>317</ymax>
+			<xmax>388</xmax>
+			<ymax>316</ymax>
+		</bndbox>
+	</object>
+	<object>
+		<name>oil</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>308</xmin>
+			<ymin>266</ymin>
+			<xmax>323</xmax>
+			<ymax>320</ymax>
+		</bndbox>
+	</object>
+	<object>
+		<name>oil</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>333</xmin>
+			<ymin>265</ymin>
+			<xmax>343</xmax>
+			<ymax>315</ymax>
+		</bndbox>
+	</object>
+	<object>
+		<name>oil</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>191</xmin>
+			<ymin>267</ymin>
+			<xmax>201</xmax>
+			<ymax>308</ymax>
 		</bndbox>
 	</object>
 </annotation>

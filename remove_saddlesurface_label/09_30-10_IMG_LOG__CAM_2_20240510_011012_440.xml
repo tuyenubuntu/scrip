@@ -1,7 +1,7 @@
 <annotation>
 	<folder>Image_raw</folder>
 	<filename>09_30-10_IMG_LOG__CAM_2_20240510_011012_440.jpg</filename>
-	<path>C:\Users\AI_PRO_DESK\OneDrive - boschtga\Partition_Local\AI@AOI\Pre_data\Image_raw\09_30-10_IMG_LOG__CAM_2_20240510_011012_440.jpg</path>
+	<path>C:\Users\AI_PRO_DESK\OneDrive - mainprodesk\AI@AOI\Pre_data\Image_raw\09_30-10_IMG_LOG__CAM_2_20240510_011012_440.jpg</path>
 	<source>
 		<database>Unknown</database>
 	</source>
@@ -21,6 +21,18 @@
 			<ymin>252</ymin>
 			<xmax>687</xmax>
 			<ymax>313</ymax>
+		</bndbox>
+	</object>
+	<object>
+		<name>oil</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>169</xmin>
+			<ymin>251</ymin>
+			<xmax>184</xmax>
+			<ymax>307</ymax>
 		</bndbox>
 	</object>
 </annotation>

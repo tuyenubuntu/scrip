@@ -1,7 +1,7 @@
 <annotation>
 	<folder>Image_raw</folder>
 	<filename>08_24-09AVO_IMG_LOG__CAM_2_20240328_012400_741.jpg</filename>
-	<path>C:\Users\rbu1hc\OneDrive - Bosch Group\AI Model Development\Data\Train\Image_raw\08_24-09AVO_IMG_LOG__CAM_2_20240328_012400_741.jpg</path>
+	<path>C:\Users\AI_PRO_DESK\OneDrive - boschtga\Partition_Local\AI@AOI\Pre_data\Image_raw\08_24-09AVO_IMG_LOG__CAM_2_20240328_012400_741.jpg</path>
 	<source>
 		<database>Unknown</database>
 	</source>
@@ -17,10 +17,10 @@
 		<truncated>0</truncated>
 		<difficult>0</difficult>
 		<bndbox>
-			<xmin>40</xmin>
-			<ymin>421</ymin>
-			<xmax>64</xmax>
-			<ymax>448</ymax>
+			<xmin>41</xmin>
+			<ymin>423</ymin>
+			<xmax>58</xmax>
+			<ymax>440</ymax>
 		</bndbox>
 	</object>
 	<object>
@@ -29,10 +29,10 @@
 		<truncated>0</truncated>
 		<difficult>0</difficult>
 		<bndbox>
-			<xmin>158</xmin>
+			<xmin>146</xmin>
 			<ymin>412</ymin>
-			<xmax>188</xmax>
-			<ymax>421</ymax>
+			<xmax>189</xmax>
+			<ymax>418</ymax>
 		</bndbox>
 	</object>
 	<object>
@@ -41,10 +41,22 @@
 		<truncated>0</truncated>
 		<difficult>0</difficult>
 		<bndbox>
-			<xmin>288</xmin>
-			<ymin>416</ymin>
+			<xmin>278</xmin>
+			<ymin>417</ymin>
 			<xmax>308</xmax>
-			<ymax>425</ymax>
+			<ymax>424</ymax>
 		</bndbox>
 	</object>
-	</annotation>
+	<object>
+		<name>abriss</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>364</xmin>
+			<ymin>422</ymin>
+			<xmax>400</xmax>
+			<ymax>426</ymax>
+		</bndbox>
+	</object>
+</annotation>
