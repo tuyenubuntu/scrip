@@ -1,0 +1,50 @@
+<annotation>
+	<folder>Image_raw</folder>
+	<filename>07_24-06_IMG_LOG__CAM_2_20240215_185247_141.jpg</filename>
+	<path>C:\Users\AI_PRO_DESK\OneDrive - mainprodesk\AI@AOI\Pre_data\Image_raw\07_24-06_IMG_LOG__CAM_2_20240215_185247_141.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>1296</width>
+		<height>600</height>
+		<depth>1</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>saddlesurface</name>
+		<pose>Unspecified</pose>
+		<truncated>1</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>1</xmin>
+			<ymin>257</ymin>
+			<xmax>939</xmax>
+			<ymax>370</ymax>
+		</bndbox>
+	</object>
+<object>
+		<name>abriss</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>440</xmin>
+			<ymin>272</ymin>
+			<xmax>486</xmax>
+			<ymax>287</ymax>
+		</bndbox>
+	</object>
+	<object>
+		<name>oil</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>111</xmin>
+			<ymin>271</ymin>
+			<xmax>291</xmax>
+			<ymax>332</ymax>
+		</bndbox>
+	</object>
+</annotation>

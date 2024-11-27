@@ -1,0 +1,38 @@
+<annotation>
+	<folder>Image_raw</folder>
+	<filename>11_24-06_IMG_LOG__CAM_1_20231030_131831_492.jpg</filename>
+	<path>C:\Users\rbu1hc\OneDrive - Bosch Group\AI Model Development\Data\Train\Image_raw\11_24-06_IMG_LOG__CAM_1_20231030_131831_492.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>1296</width>
+		<height>600</height>
+		<depth>1</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>saddlesurface</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>280</xmin>
+			<ymin>306</ymin>
+			<xmax>1290</xmax>
+			<ymax>407</ymax>
+		</bndbox>
+	</object>
+<object>
+		<name>abriss</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>497</xmin>
+			<ymin>323</ymin>
+			<xmax>542</xmax>
+			<ymax>329</ymax>
+		</bndbox>
+	</object>
+</annotation>

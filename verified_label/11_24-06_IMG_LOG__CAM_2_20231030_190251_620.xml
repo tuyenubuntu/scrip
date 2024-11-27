@@ -1,0 +1,38 @@
+<annotation>
+	<folder>Image_raw</folder>
+	<filename>11_24-06_IMG_LOG__CAM_2_20231030_190251_620.jpg</filename>
+	<path>C:\Users\rbu1hc\OneDrive - Bosch Group\AI Model Development\Data\Train\Image_raw\11_24-06_IMG_LOG__CAM_2_20231030_190251_620.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>1296</width>
+		<height>600</height>
+		<depth>1</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>saddlesurface</name>
+		<pose>Unspecified</pose>
+		<truncated>1</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>1</xmin>
+			<ymin>203</ymin>
+			<xmax>940</xmax>
+			<ymax>333</ymax>
+		</bndbox>
+	</object>
+<object>
+		<name>impression</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>712</xmin>
+			<ymin>277</ymin>
+			<xmax>740</xmax>
+			<ymax>329</ymax>
+		</bndbox>
+	</object>
+</annotation>

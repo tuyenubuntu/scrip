@@ -1,0 +1,38 @@
+<annotation>
+	<folder>Image_raw</folder>
+	<filename>11_24-09_IMG_LOG__CAM_2_20240321_212131_165.jpg</filename>
+	<path>C:\Users\AI_PRO_DESK\OneDrive - mainprodesk\AI@AOI\Pre_data\Image_raw\11_24-09_IMG_LOG__CAM_2_20240321_212131_165.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>1296</width>
+		<height>600</height>
+		<depth>1</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>saddlesurface</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>19</xmin>
+			<ymin>283</ymin>
+			<xmax>945</xmax>
+			<ymax>414</ymax>
+		</bndbox>
+	</object>
+	<object>
+		<name>abriss</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>377</xmin>
+			<ymin>299</ymin>
+			<xmax>447</xmax>
+			<ymax>321</ymax>
+		</bndbox>
+	</object>
+</annotation>

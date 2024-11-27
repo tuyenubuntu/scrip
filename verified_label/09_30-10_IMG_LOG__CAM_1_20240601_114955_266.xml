@@ -1,0 +1,50 @@
+<annotation>
+	<folder>Image_raw</folder>
+	<filename>09_30-10_IMG_LOG__CAM_1_20240601_114955_266.jpg</filename>
+	<path>C:\Users\rbu1hc\OneDrive - Bosch Group\AI Model Development\Data\Train\Image_raw\09_30-10_IMG_LOG__CAM_1_20240601_114955_266.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>1296</width>
+		<height>600</height>
+		<depth>1</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>saddlesurface</name>
+		<pose>Unspecified</pose>
+		<truncated>1</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>25</xmin>
+			<ymin>201</ymin>
+			<xmax>1296</xmax>
+			<ymax>371</ymax>
+		</bndbox>
+	</object>
+<object>
+		<name>oil</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>872</xmin>
+			<ymin>221</ymin>
+			<xmax>900</xmax>
+			<ymax>301</ymax>
+		</bndbox>
+	</object>
+	<object>
+		<name>oil</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>1063</xmin>
+			<ymin>232</ymin>
+			<xmax>1211</xmax>
+			<ymax>301</ymax>
+		</bndbox>
+	</object>
+</annotation>

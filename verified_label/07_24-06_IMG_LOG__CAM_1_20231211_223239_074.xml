@@ -1,0 +1,50 @@
+<annotation>
+	<folder>Image_raw</folder>
+	<filename>07_24-06_IMG_LOG__CAM_1_20231211_223239_074.jpg</filename>
+	<path>C:\Users\rbu1hc\OneDrive - Bosch Group\AI Model Development\Data\Train\Image_raw\07_24-06_IMG_LOG__CAM_1_20231211_223239_074.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>1296</width>
+		<height>600</height>
+		<depth>1</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>saddlesurface</name>
+		<pose>Unspecified</pose>
+		<truncated>1</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>379</xmin>
+			<ymin>303</ymin>
+			<xmax>1296</xmax>
+			<ymax>431</ymax>
+		</bndbox>
+	</object>
+<object>
+		<name>impression</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>498</xmin>
+			<ymin>377</ymin>
+			<xmax>576</xmax>
+			<ymax>422</ymax>
+		</bndbox>
+	</object>
+	<object>
+		<name>abriss</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>875</xmin>
+			<ymin>319</ymin>
+			<xmax>895</xmax>
+			<ymax>336</ymax>
+		</bndbox>
+	</object>
+</annotation>

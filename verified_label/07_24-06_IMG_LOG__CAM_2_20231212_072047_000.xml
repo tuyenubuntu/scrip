@@ -1,0 +1,38 @@
+<annotation>
+	<folder>Image_raw</folder>
+	<filename>07_24-06_IMG_LOG__CAM_2_20231212_072047_000.jpg</filename>
+	<path>C:\Users\AI_PRO_DESK\OneDrive - mainprodesk\AI@AOI\Pre_data\Image_raw\07_24-06_IMG_LOG__CAM_2_20231212_072047_000.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>1296</width>
+		<height>600</height>
+		<depth>1</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>saddlesurface</name>
+		<pose>Unspecified</pose>
+		<truncated>1</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>1</xmin>
+			<ymin>267</ymin>
+			<xmax>945</xmax>
+			<ymax>380</ymax>
+		</bndbox>
+	</object>
+<object>
+		<name>impression</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>232</xmin>
+			<ymin>305</ymin>
+			<xmax>284</xmax>
+			<ymax>363</ymax>
+		</bndbox>
+	</object>
+</annotation>
