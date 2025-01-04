@@ -4,7 +4,7 @@
 data
 Z
 label
-main_label/
+main_label/tracking.txt
 images/
 labels_tuyen/
 only_saddlesurface_label
