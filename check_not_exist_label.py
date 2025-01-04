@@ -1,7 +1,3 @@
-''''
-Dưới đây là script giúp bạn tìm ra các file label không chứa một class mà bạn nhập vào. 
-Script sẽ duyệt qua tất cả các file trong folder và kiểm tra xem class có xuất hiện trong mỗi file hay không. Nếu không, tên file đó sẽ được liệt kê.
-'''
 import os
 import xml.etree.ElementTree as ET
 
@@ -9,7 +5,7 @@ import xml.etree.ElementTree as ET
 target_class = input("Enter the class you want to check for: ")
 
 # Path to the folder containing labeled files
-label_folder = 'C:\\Users\\rbu1hc\\OneDrive - Bosch Group\\AI Model Development\\Data\\Train\\Label_unverify'
+label_folder = 'main_label\\patch1\\labels'
 
 # List to store files that do not contain the desired class
 files_without_class = []
@@ -50,5 +46,6 @@ if files_without_class:
     print(f"Files without the class '{target_class}':")
     for file in files_without_class:
         print(file)
+    print(f"\nTotal files without the class '{target_class}': {len(files_without_class)}")
 else:
     print(f"All files contain the class '{target_class}'.")

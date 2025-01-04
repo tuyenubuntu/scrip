@@ -28,7 +28,7 @@ import xml.etree.ElementTree as ET
 target_class = input("Enter the class you want to check for: ")
 
 # Path to the folder containing labeled files
-label_folder = 'C:\\Users\\rbu1hc\\OneDrive - Bosch Group\\AI Model Development\\Data\\Train\\Label_unverify'
+label_folder = 'main_label\patch1\labels'
 
 # List to store files that do not contain the desired class
 files_without_class = []

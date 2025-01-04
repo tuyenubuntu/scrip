@@ -11,12 +11,14 @@ import xml.etree.ElementTree as ET
 target_class = input("Enter the class you want to search for: ")
 
 # Path to the folder containing label and image files
-label_folder = 'C:\\Users\\rbu1hc\\OneDrive - Bosch Group\\AI Model Development\\Data\\Train\\Label_unverify'
-image_folder = 'C:\\Users\\rbu1hc\\OneDrive - Bosch Group\\AI Model Development\\Data\\Train\\Image_raw'  # Path to the image folder (Update if needed)
+# label_folder = 'C:\\Users\\rbu1hc\\OneDrive - Bosch Group\\AI Model Development\\Data\\Train\\Label_unverify'
+label_folder = 'main_label/patch1/labels'
+# image_folder = 'C:\\Users\\rbu1hc\\OneDrive - Bosch Group\\AI Model Development\\Data\\Train\\Image_raw'  # Path to the image folder (Update if needed)
+image_folder = 'main_label/patch1/images'
 
 # Create a new folder to save copied files, named as class + '_label'
-output_folder_label = f"{target_class}_label"
-output_folder_image = f"{target_class}_image"
+output_folder_label = f"main_label/patch1/{target_class}_labels"
+output_folder_image = f"main_label/patch1/{target_class}_images"
 
 os.makedirs(output_folder_label, exist_ok=True)
 os.makedirs(output_folder_image, exist_ok=True)
@@ -57,7 +59,7 @@ for filename in os.listdir(label_folder):
         shutil.copy(filepath, output_folder_label)
         
         # Check and copy the corresponding image file with the same name
-        image_filename = filename.replace('.xml', '.jpg')  # Change extension if needed (e.g., .png, .jpeg)
+        image_filename = filename.replace('.xml', '.bmp')  # Change extension if needed (e.g., .png, .jpeg)
         image_filepath = os.path.join(image_folder, image_filename)
         
         # If the image exists, copy it
